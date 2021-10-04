@@ -1,46 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:curso_flutter/description_place.dart';
-import 'package:curso_flutter/review_list.dart';
-import 'package:curso_flutter/gradient_back.dart';
-import 'header_appbar.dart';
+import 'navigation_page.dart';
+import 'navigation_cupertino.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  String descriptionText =
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie mattis dui, sed dignissim urna dictum at. Donec elementum nunc vel sagittis malesuada. Pellentesque interdum feugiat velit luctus imperdiet. Curabitur nec pharetra lorem. Curabitur eu convallis quam. Sed turpis nisi, faucibus non enim non, viverra blandit metus. In dictum turpis non orci porta bibendum vitae Vivamus fermentum dignissim lacus, in pharetra sapien imperdiet a. Etiam condimentum imperdiet purus, non pulvinar lacus ullamcorper nec. Pellentesque erat diam, maximus id efficitur sed, elementum eu mauris. Maecenas lorem sem, blandit sed diam sodales, imperdiet sollicitudin magna. Sed tempor elit sed volutpat blandit. Proin in enim id sem aliquam elementum. Praesent vitae iaculis odio, non efficitur justo. Suspendisse blandit luctus risus, interdum cursus neque congue eget. Sed rhoncus rhoncus tortor nec pharetra. ";
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          // This is the theme of your application.
-          //
-          // Try running your application with "flutter run". You'll see the
-          // application has a blue toolbar. Then, without quitting the app, try
-          // changing the primarySwatch below to Colors.green and then invoke
-          // "hot reload" (press "r" in the console where you ran "flutter run",
-          // or simply save your changes to "hot reload" in a Flutter IDE).
-          // Notice that the counter didn't reset back to zero; the application
-          // is not restarted.
-          primarySwatch: Colors.blue,
-        ),
-        home: Scaffold(
-          body: Stack(
-            children: <Widget>[
-              ListView(
-                children: <Widget>[
-                  DescriptionPace("Bahamas", 4, descriptionText),
-                  ReviewList(),
-                ],
-              ),
-              HeaderAppBar(),
-            ],
-          ),
-        ) //const MyHomePage(title: 'Flutter Demo Home Page'),
-        );
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        // This is the theme of your application.
+        //
+        // Try running your application with "flutter run". You'll see the
+        // application has a blue toolbar. Then, without quitting the app, try
+        // changing the primarySwatch below to Colors.green and then invoke
+        // "hot reload" (press "r" in the console where you ran "flutter run",
+        // or simply save your changes to "hot reload" in a Flutter IDE).
+        // Notice that the counter didn't reset back to zero; the application
+        // is not restarted.
+        primarySwatch: Colors.blue,
+      ),
+      home:
+          NavigationCupertino(), //const MyHomePage(title: 'Flutter Demo Home Page'),
+    );
   }
 }
 

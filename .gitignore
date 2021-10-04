@@ -16,14 +16,7 @@
 .idea/
 
 # The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
+# VS Code which you may wisflutter   run --no-sound-null-safety
 .flutter-plugins
 .flutter-plugins-dependencies
 .packages
@@ -44,3 +37,5 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+#flutter   run --no-sound-null-safety
